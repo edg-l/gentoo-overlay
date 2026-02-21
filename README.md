@@ -10,7 +10,13 @@ Personal Gentoo overlay for my own projects and software I use that isn't in the
 
 ## Usage
 
-Create `/etc/portage/repos.conf/edg-l.conf`:
+Add the overlay with `eselect-repository` (recommended):
+
+```bash
+eselect repository add edg-l git https://github.com/edg-l/gentoo-overlay
+```
+
+Or manually create `/etc/portage/repos.conf/edg-l.conf`:
 
 ```ini
 [edg-l]
